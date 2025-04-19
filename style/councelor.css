@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "roboto, arial, sans-sarif";
+}
+/* --------------------------------- Header ----------------------------------- */
+header {
+  height: 166px;
+  width: 100%;
+  /* background: #000; */
+}
+.navbar-1 {
+  background: #333333;
+  height: 60px;
+  display: flex;
+  color: white;
+  padding: 14px;
+  align-items: center;
+}
+.logo-img-1 img {
+  width: 123px;
+  height: 30px;
+  margin: 4px 10px;
+}
+.heading-1 {
+  padding: 5px 40px;
+  background-color: #222222;
+  color: #9b9b9b;
+  text-transform: uppercase;
+  font-family: "open Sans, sane-sarif";
+  font-weight: 400;
+  line-height: 49px;
+}
+.icons-1 {
+  float: right;
+  margin: 0 30px 0 870px;
+  padding: 10px 40px;
+  background: #c18585;
+}
+
+.navbar-2 {
+  height: 40px;
+  background: #589167;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.info-2 {
+  color: white;
+  padding: 0 10px;
+}
+.social-icons-2 {
+  margin: 0 90px 0 473px;
+}
+
+.navbar-3 {
+  height: 66px;
+  /* background: #ad6969; */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 290px;
+}
+.navbar-3 ul {
+  display: flex;
+  margin: 0 10px 0 380px;
+}
+.navbar-3 ul li {
+  padding: 0 17px;
+}
+.navbar-3 ul li a {
+  color: #000;
+}
+.navbar-3 ul li a:hover {
+  color: #589167;
+}
+/* ---------------------------------------- Hero_Section -------------------------------------- */
+.sec-1 {
+  height: 849px;
+  background-image: url(../assets/bg_1.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.hero-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #d37979; */
+  height: 849px;
+  margin: 0 242px;
+}
+/* ------------------------------ Content-Hero ------------------------------ */
+.content-h{
+  width: 555px;
+  height: 307px;
+  box-sizing: border-box;
+}
+.content-h h1{
+ 
+  font-size: 60px;
+  margin: 0 0 24px;
+}
+.con-h{
+  font-size: 18px;
+  margin: 0 0 24px;
+ 
+}
+.btn-h{
+  display: flex;
+ 
+}
+.btn-con{
+  background: #589167;
+  color: white;
+  padding: 16px 24px;
+  border: none;
+}
+.btn-read{
+  color: #000;
+  background-color: white;
+  padding: 16px 24px;
+  border: none;
+  
+}
+/* ------------------------------ Video ------------------------------ */
+.h-video{
+  width: 555px;
+  height: 307px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.h-video .play-v{
+  font-size: 30px;
+  color: #589167;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: sa 2s linear 3sA infinite normal;
+}
+@keyframes sa{
+  from {border : 4px ; };
+  to { font-size : 0px; };
+}
+/* ------------------------------ Card_hero ------------------------------ */
+.card-h{
+  background: #7d4a4a;
+  position: relative;
+  width: 1331px;
+  
+  display: flex;
+}
+.cards-h {
+  width: 220px;
+  background-color: #589167;
+  margin: -70px 0 0 0;
+}
+.card-h-1{
+  width: 370px;
+  height: 242px;
+  background: #589167;
+  color: white;
+  padding: 30px;
+  margin: -70px 0 0 0;
+}
