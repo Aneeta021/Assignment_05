@@ -10,6 +10,7 @@
       rel="stylesheet"
       href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;700;900&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
@@ -23,17 +24,36 @@
     <header>
       <nav class="navbar-1">
         <div class="logo-img-1">
-          <img src="./assets/logo.png" alt="" />
+          <img src="./assets/techslab-logo.png" alt="" />
         </div>
 
         <div class="heading-1">
-          <h2><span> + </span> Councelor</h2>
+          <h2>
+            <i class="fa-solid fa-plus"></i>
+            Councelor
+          </h2>
         </div>
 
         <div class="icons-1">
-          <i class="fas fa-desktop"></i>
-          <i class="fas fa-tablet"></i>
-          <i class="fas fa-mobile"></i>
+          <div class="icon-bar">
+            <i class="fas fa-desktop"></i>
+            <i class="fa-solid fa-tablet-screen-button"></i>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+          <div class="icon-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <!-- ----- Purchase-btn ----- -->
+        <div class="purchase-btn">
+          <a href="#" title="Buy now" class="icon-shopping-cart"></a>
+          <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+        </div>
+        <!-- ----- Remove-btn ----- -->
+        <div class="remove-btn">
+          <a href="#" title="Close this bar" class="icon-remove"></a>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
         </div>
       </nav>
       <!-- ---------------- Navbar-2 ----------------- -->
@@ -47,16 +67,16 @@
 
         <div class="info-2">
           <p>
-            <i class="fas fa-telegram"></i>
+            <i class="fa-brands fa-telegram"></i>
             youremail@gmail.com
           </p>
         </div>
 
         <div class="social-icons-2">
-          <i class="fas fa-facebook"></i>
-          <i class="fas fa-twitor"></i>
-          <i class="fas fa-instagram"></i>
-          <i class="fas fa-website"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-solid fa-globe"></i>
         </div>
       </nav>
       <!-- ---------------- Navbar-3 ----------------- -->
@@ -99,37 +119,203 @@
             </a>
           </div>
         </div>
-        <div class="card-h">
-          <div class="cards-h"></div>
-          <div class="card-h-1">
-            <div class="icon-card-1"></div>
-            <div class="con-card-1">
-              <h2>100% Confidential</h2>
-              <p> A small river named Duden flows by their place and supplies it
-                with the necessary regelialia.
-              </p>
-            </div>
+      </section>
+      <!-- --------------------------------------------- Hero-card --------------------------------------------- -->
+      <div class="card-h">
+        <div class="cards-h"></div>
+        <div class="card-h-1">
+          <div class="icon-card-1"></div>
+          <div class="con-card-1">
+            <h2>100% Confidential</h2>
+            <p> A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
           </div>
-          <div class="card-h-1">
-            <div class="icon-card-1"></div>
-            <div class="con-card-1">
-              <h2>100% Confidential</h2>
-              <p> A small river named Duden flows by their place and supplies it
-                with the necessary regelialia.
-              </p>
-            </div>
+        </div>
+        <div class="card-h-1" style="background-color: #528760;">
+          <div class="icon-card-1"></div>
+          <div class="con-card-1">
+            <h2>100% Confidential</h2>
+            <p> A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
           </div>
-          <div class="card-h-1">
-            <div class="icon-card-1"></div>
-            <div class="con-card-1">
-              <h2>100% Confidential</h2>
-              <p> A small river named Duden flows by their place and supplies it
-                with the necessary regelialia.
-              </p>
+        </div>
+        <div class="card-h-1" style="background-color: #4e815c;">
+          <div class="icon-card-1"></div>
+          <div class="con-card-1">
+            <h2>100% Confidential</h2>
+            <p> A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------------- Services_Section-02 --------------------------------------- -->
+      <section class="sec-2">
+        <div class="service-sec-2">
+          <div class="heading-serv-2">
+            <span>services</span>
+            <h2>How It Works</h2>
+          </div>
+          <!-- ------- Services-Cards-2 ------- -->
+          <div class="service-cards">
+            <div class="ser-card">
+              <div class="ser-icon">
+                <div class="circle">
+                  <div class="cir-1 box"></div>
+                  <div class="cir-2 box">01</div>
+                </div>
+                <img src="./assets/icons-img/checklistsqr.png" alt="">
+              </div>
+              <div class="ser-con">
+                <h2>Make Schedule</h2>
+                <p> A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+            <div class="ser-card">
+              <div class="ser-icon">
+                <div class="circle">
+                  <div class="cir-1"></div>
+                  <div class="cir-2">02</div>
+                </div>
+                <img src="./assets/icons-img/checklistsqr.png" alt="">
+              </div>
+              <div class="ser-con">
+                <h2>Make Schedule</h2>
+                <p> A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+            <div class="ser-card">
+              <div class="ser-icon">
+                <div class="circle">
+                  <div class="cir-1"></div>
+                  <div class="cir-2">03</div>
+                </div>
+                <img src="./assets/icons-img/checklistsqr.png" alt="">
+              </div>
+              <div class="ser-con">
+                <h2>Make Schedule</h2>
+                <p> A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- --------------------------------------- Best Counselor_Section-03 ----------------------------------------- -->
+      <section class="sec-3">
+       <div class="best_conselor">
+          <div class="bc-img">
+            <img src="./assets/about-1.jpg" alt="">
+          </div>
+          <div class="bc-con">
+            <span>wellcome counselor</span>
+            <h2>Best Counseling Funding Network Worldwide.</h2>
+            <p>
+              A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+            </p>
+            <p>
+              On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+            </p>
+            <a href="#">
+              <i class="fas fa-play play-v" ></i>
+              <span style="color: #000000b3;">watch our counsultant video</span>
+            </a>
+          </div>
+       </div>
+      </section>
+       <!-- -------------------------------------- Services_Section-04 --------------------------------------- -->
+       <section class="sec-4">
+        <div class="service-sec-4">
+          <div class="heading-serv-4">
+            <span>our services</span>
+            <h2>We Can Help You With This Situation</h2>
+          </div>
+          <!-- ------- Services-Content-4 ------- -->
+          <div class="content-4">
+            <div class="heading-4">
+              <ul class="service-4">
+                <li class="ser-item active">
+                  <a class="ser-link" href="#services-1">Relation Problem</a>
+                </li>
+                <li class="ser-item">
+                  <a class="ser-link" href="#services-2">Couples Counseling</a>
+                </li>
+                <li class="ser-item">
+                  <a class="ser-link" href="#services-3">Depression Treatment</a>
+                </li>
+                <li class="ser-item">
+                  <a class="ser-link" href="#services-4">Family Problem</a>
+                </li>
+                <li class="ser-item">
+                  <a class="ser-link" href="#services-5">Personal Problem</a>
+                </li>
+                <li class="ser-item">
+                  <a class="ser-link" href="#services-6">Business Problem</a>
+                </li>
+              </ul>
+            </div>
+            <!-- ------- Services-Content-4 ------- -->
+            <div class="ser-tab-content">
+              <div class="ser-con-img" id="services-1">
+                <div class="ser-img">
+                  <img src="./assets/services-1.jpg" alt="">
+                </div>
+                <h3><a href="#">Relation Problem</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+
+              <div class="ser-con-img" id="services-2">
+                <div class="ser-img">
+                  <img src="./assets/services-1.jpg" alt="">
+                </div>
+                <h3><a href="#">Couples Counseling</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+              
+              <div class="ser-con-img" id="services-3">
+                <div class="ser-img">
+                  <img src="./assets/services-1.jpg" alt="">
+                </div>
+                <h3><a href="#">Depression Treatment</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+
+              <div class="ser-con-img" id="services-4">
+                <div class="ser-img">
+                  <img src="./assets/services-1.jpg" alt="">
+                </div>
+                <h3><a href="#">Family Problem</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+
+              <div class="ser-con-img" id="services-5">
+                <div class="ser-img">
+                  <img src="./assets/services-1.jpg" alt="">
+                </div>
+                <h3><a href="#">Personal Problem</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+
+              <div class="ser-con-img" id="services-6">
+                <div class="ser-img">
+                  <img src="./assets/services-1.jpg" alt="">
+                </div>
+                <h3><a href="#">Business Problem</a></h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      
     </main>
   </body>
 </html>
