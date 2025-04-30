@@ -6,15 +6,17 @@
   text-decoration: none;
   font-family: "roboto, arial, sans-sarif";
   box-sizing: border-box;
+  text-transform: capitalize;
 }
 /* --------------------------------- Header ----------------------------------- */
 header {
-  height: 166px;
+  /* height: 106px; */
   width: 100%;
   box-sizing: border-box;
   /* background: #000; */
 }
 .navbar-1 {
+  width: 100%;
   background: #333333;
   height: 60px;
   display: flex;
@@ -29,7 +31,7 @@ header {
   padding: 10px 0 0;
   /* background-color: #fff; */
 }
-.heading-1 h2{
+.heading-1 h2 {
   height: 60px;
   width: 174px;
   padding: 22px 30px 22px 20px;
@@ -43,10 +45,10 @@ header {
   display: flex;
   /* line-height: 49px; */
 }
-.heading-1 h2 i{
-margin: 0 12px 0 0;
+.heading-1 h2 i {
+  margin: 0 12px 0 0;
 }
-.icons-1{
+.icons-1 {
   /* float: right;
   margin: 0 30px 0 700px; */
   display: flex;
@@ -55,24 +57,28 @@ margin: 0 12px 0 0;
   background-color: #4a4545;
   margin: 0 30px 0 844px;
 }
-.icons-1 i{
+.icons-1 i {
   /* float: left; */
- font-size: 27px;
+  font-size: 27px;
   padding: 10px 17px;
   /* background: #c18585; */
 }
-.purchase-btn{
-background-color: #d59f9f;
+.purchase-btn {
+  background-color: #d59f9f;
 }
 
 /*  ---------------- Navbar-2 ----------------- */
 .navbar-2 {
+  width: 100%;
   height: 40px;
   background: #589167;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+}
+.info_2 {
+  display: flex;
 }
 .info-2 {
   color: white;
@@ -81,14 +87,14 @@ background-color: #d59f9f;
 
 .social-icons-2 {
   margin: 0 0px 0 488px;
-  
 }
-.social-icons-2 i{
+.social-icons-2 i {
   padding: 0 8px 0 18px;
 }
 
 .navbar-3 {
-  height: 66px;
+  height: 76px;
+  width: 1009px;
   /* background: #ad6969; */
   display: flex;
   align-items: center;
@@ -108,6 +114,21 @@ background-color: #d59f9f;
 .navbar-3 ul li a:hover {
   color: #589167;
 }
+
+/* --------------------------------------- Toggle ---------------------------------------- */
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
 /* ---------------------------------------- Hero_Section -------------------------------------- */
 .sec-1 {
   height: 849px;
@@ -125,48 +146,45 @@ background-color: #d59f9f;
   margin: 0 242px;
 }
 /* ------------------------------ Content-Hero ------------------------------ */
-.content-h{
+.content-h {
   width: 555px;
   height: 307px;
   box-sizing: border-box;
 }
-.content-h h1{
+.content-h h1 {
   color: #000;
   font-size: 60px;
   margin: 0 0 24px;
 }
-.con-h{
+.con-h {
   font-size: 18px;
   margin: 0 0 24px;
   color: #000000cc;
- 
 }
-.btn-h{
+.btn-h {
   display: flex;
- 
 }
-.btn-con{
+.btn-con {
   background: #589167;
   color: white;
   padding: 16px 24px;
   border: none;
 }
-.btn-read{
+.btn-read {
   color: #000;
   background-color: white;
   padding: 16px 24px;
   border: none;
-  
 }
 /* ------------------------------ Video ------------------------------ */
-.h-video{
+.h-video {
   width: 555px;
   height: 307px;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-.h-video .play-v{
+.h-video .play-v {
   font-size: 30px;
   color: #589167;
   background-color: white;
@@ -178,14 +196,17 @@ background-color: #d59f9f;
   align-items: center;
   animation: sa 2s linear 3sA infinite normal;
 }
-@keyframes sa{
-  from {border : 4px ; };
-  to { font-size : 0px; };
+@keyframes sa {
+  from {
+    border: 4px;
+  }
+  to {
+    font-size: 0px;
+  }
 }
 /* ------------------------------ Card_hero ------------------------------ */
-.card-h{
+.card-h {
   background: #7d4a4a;
-  /* position: relative; */
   width: 1331px;
   display: flex;
 }
@@ -194,32 +215,47 @@ background-color: #d59f9f;
   background-color: #589167;
   margin: -70px 0 0 0;
 }
-.card-h-1{
+.card-h-1 {
   width: 370px;
   height: 242px;
   background: #589167;
   color: white;
   padding: 30px;
   margin: -70px 0 0 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
-.con-card-1 h2{
+
+.icon-card-img {
+  margin: 30px 20px 0 0;
+  width: 60px;
+  height: 61px;
+  color: #fff;
+}
+.icon-card-img img {
+  width: 60px;
+  height: 61px;
+  color: #fff;
+}
+.con-card-1 h2 {
   font-size: 24px;
 }
 /* ---------------------- Section-02 ---------------------- */
-.sec-2{
+.sec-2 {
   height: 682px;
   padding: 102px 0;
   /* background: #c48282; */
 }
 
-.heading-serv-2 span{
+.heading-serv-2 span {
   display: flex;
   justify-content: center;
   color: #589167;
   text-transform: uppercase;
   margin: 0 0 10px;
 }
-.heading-serv-2 h2{
+.heading-serv-2 h2 {
   display: flex;
   justify-content: center;
   color: #000000b3;
@@ -228,12 +264,12 @@ background-color: #d59f9f;
   margin: 0 0 8px;
 }
 
-.service-cards{
+.service-cards {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ser-icon{
+.ser-icon {
   background-color: #f5f4f0;
   width: 170px;
   height: 170px;
@@ -244,12 +280,12 @@ background-color: #d59f9f;
   margin: 0 0 14px;
   /* position: relative; */
 }
-.circle{
+.circle {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.cir-1{
+.cir-1 {
   width: 49px;
   height: 49px;
   border-radius: 49%;
@@ -258,7 +294,7 @@ background-color: #d59f9f;
   top: -18px;
   background: #589167;
 }
-.cir-2{
+.cir-2 {
   width: 49px;
   height: 49px;
   border-radius: 49%;
@@ -271,13 +307,13 @@ background-color: #d59f9f;
   left: 49px;
   bottom: 40px;
 }
-.ser-icon img{
+.ser-icon img {
   font-size: 70px;
   color: #000000;
   height: 49px;
   position: relative;
 }
-.ser-card{
+.ser-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -287,67 +323,67 @@ background-color: #d59f9f;
   width: 349px;
   height: 331px;
 }
-.ser-con h2{
+.ser-con h2 {
   color: #000000b3;
   font-size: 24px;
   margin: 0 0 8px;
 }
-.ser-con p{
+.ser-con p {
   color: #808080;
   font-size: 17px;
   margin: 0 0 17px;
 }
-.ser-icon:hover{
+.ser-icon:hover {
   background-color: #589167;
 }
 /* .circle:hover{
   background-color: #7b5353;
   
 } */
-.cir-1:hover{
+.cir-1:hover {
   background-color: #fff;
 }
-.cir-2:hover{
+.cir-2:hover {
   background-color: #fff;
   color: #000;
 }
 /* ---------------------- Section-03 ---------------------- */
-.sec-3{
+.sec-3 {
   height: 585px;
   /* background: #c48282; */
 }
-.best_conselor{
+.best_conselor {
   display: flex;
   justify-content: center;
   /* background: #443333; */
 }
-.bc-img img{
+.bc-img img {
   display: flex;
   justify-content: center;
- width: 570px;
- height: 585px;
+  width: 570px;
+  height: 585px;
 }
-.bc-con{
+.bc-con {
   padding: 49px;
   width: 540px;
   height: 585px;
   background-color: #f5f4f0;
 }
-.bc-con span{
+.bc-con span {
   color: #589167;
   text-transform: uppercase;
 }
-.bc-con h2{
+.bc-con h2 {
   font-size: 40px;
   color: #000000b3;
   margin: 0 0 24px;
 }
-.bc-con p{
+.bc-con p {
   font-size: 17px;
   color: #808080;
   margin: 0 0 16px;
 }
-.bc-con i{
+.bc-con i {
   font-size: 10px;
   width: 40px;
   height: 30px;
@@ -359,19 +395,19 @@ background-color: #d59f9f;
   margin: 24px 0 0;
 }
 /* ---------------------- Section-04 ---------------------- */
-.sec-4{
+.sec-4 {
   height: 937px;
   padding: 102px 0;
   /* background: #523c3c; */
 }
 
-.heading-serv-4 span{
+.heading-serv-4 span {
   display: flex;
   justify-content: center;
   color: #589167;
   text-transform: uppercase;
 }
-.heading-serv-4 h2{
+.heading-serv-4 h2 {
   display: flex;
   justify-content: center;
   color: #000000b3;
@@ -380,18 +416,17 @@ background-color: #d59f9f;
   margin: 0 0 8px;
 }
 /* ------- Services-Content-4 ------- */
-.content-4{
-display: flex;
-justify-content: center;
-
+.content-4 {
+  display: flex;
+  justify-content: center;
 }
-.heading-4 .service-4{
+.heading-4 .service-4 {
   width: 349px;
   height: 541px;
   margin: 0 32px;
   /* background-color: #3a1616; */
 }
-.service-4 .ser-item{
+.service-4 .ser-item {
   height: 80px;
   width: 349px;
   padding: 24px 16px;
@@ -400,29 +435,39 @@ justify-content: center;
   border-radius: 4px;
   background-color: white;
 }
-.service-4 .ser-item a{
+.service-4 .ser-item a {
   color: #000;
 }
-.service-4 .active{
+.service-4 .active {
   background-color: #589167;
+  color: #fff;
 }
-.service-4 .active a{
+.service-4 .active a {
   color: white;
+}
+.service-4 .ser-item:hover,
+.ser-link:hover {
+  background-color: #589167;
+  color: #fff;
+}
+.ser-item:hover a {
+  background-color: #589167;
+  color: #fff;
 }
 
 /* .ser-tab-content{
   display: none;
 } */
-.ser-con-img{
+.ser-con-img {
   height: 561px;
   width: 730px;
 }
-.ser-img img{
+.ser-img img {
   height: 400px;
   width: 730px;
   margin: 0 0 20px;
 }
-.ser-con-img h3{
+.ser-con-img h3 {
   font-size: 28px;
   margin: 0 0 8px;
 }
@@ -439,4 +484,1687 @@ justify-content: center;
   display: block;
 }
 
+/* ---------------------- Happy Client_Section-05 ---------------------- */
+.sec-5 {
+  height: 400px;
+  background-image: url(../assets/bg_4.jpg);
+  background-size: cover;
+  background-position: 10% 54%;
+  /* position: relative;*/
+}
+.happy-client {
+  height: 400px;
+  width: 100%;
+  /* background-color: #589167; */
+  background-color: rgba(88, 145, 103, 0.8);
+  /* position: absolute; */
+}
+.heading-hap-5 span {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  margin: 90px 0 0;
+  padding: 0 0 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.heading-hap-5 h2 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0px 0 17px;
+}
 
+/* --------------- HC_Card ---------------  */
+.client-card {
+  height: 394px;
+  /* background: #775f5f; */
+  display: flex;
+  justify-content: center;
+}
+.hc-card {
+  height: 304px;
+  width: 329px;
+  background-color: #fff;
+  padding: 0 14px;
+  margin: -90px 10px 0;
+}
+.hc-card p {
+  font-size: 17px;
+  color: #6b6262;
+  margin: 30px 0;
+}
+.hc-con {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.hc-con img {
+  width: 80px;
+  height: 80px;
+  border-radius: 49%;
+}
+.hc-con h2 {
+  font-size: 20px;
+  padding: 0 10px;
+  color: #000;
+  margin: 0;
+}
+.hc-con p {
+  font-size: 16px;
+  padding: 0 10px;
+  color: #3d3838;
+  margin: 0;
+}
+/* ------------------------ Affordable Price_Section-06 ------------------------ */
+.sec-6 {
+  height: 854px;
+  padding: 102px 0;
+  background-color: #f5f4f0;
+}
+.heading-ap-6 span {
+  display: flex;
+  justify-content: center;
+  color: #589167;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.heading-ap-6 h2 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  text-transform: capitalize;
+  margin: 0 0 24px;
+  padding: 0 0 40px;
+}
+.pkj-cards {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+}
+.pkj-card {
+  width: 290px;
+  /* height: 487px; */
+  background-color: #fff;
+  margin: 0 14px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price {
+  font-size: 80px;
+  /* background-color: #82537a; */
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 100px;
+}
+
+.price span {
+  font-size: 60px;
+  color: #589167;
+}
+.price sup {
+  font-size: 24px;
+  color: #808080;
+  margin: 20px 0 0;
+}
+.price sub {
+  font-size: 12.74px;
+  color: #808080;
+  align-self: flex-end;
+  margin: 0px 0 10px;
+}
+.pkj-card h2 {
+  font-size: 18px;
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  color: #000;
+}
+.pkj-card .ul {
+  font-size: 17px;
+  color: #808080;
+  margin: 20px 0 48px;
+}
+.pkj-card .ul li {
+  color: #589167;
+  margin: 0 0 10px;
+}
+.pkj-card .ul li a {
+  color: #808080;
+}
+.pkj-card button {
+  background-color: #589167;
+  color: #fff;
+  padding: 16px 8px;
+  width: 248px;
+  text-align: center;
+  border: none;
+  font-size: 17px;
+}
+/* ------------------------ Get Touch_Section-07 ------------------------ */
+.sec-7 {
+  height: 660px;
+  /* padding: 102px 0; */
+  background-image: url(../assets/bg_2.jpg);
+  background-size: cover;
+  background-position: 0 61%;
+}
+.get-touch {
+  height: 660px;
+  width: 100%;
+  background-color: rgba(88, 145, 103, 0.8);
+}
+.form {
+  height: 530px;
+  width: 480px;
+  /* background-color: #7d5f5f; */
+  margin: 0px 0 0 290px;
+  padding: 180px 34px;
+}
+.form h2 {
+  font-size: 28px;
+  color: #fff;
+  margin: 0 0 24px;
+}
+input {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.f-name {
+  flex-direction: row;
+  gap: 15px;
+}
+.form-control {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea.form-control {
+  resize: vertical;
+  height: 120px;
+}
+
+.submit-btn {
+  color: #fff;
+  background-color: #589167;
+  font-weight: bold;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e1e1e1;
+}
+/* .form element::placeholder {
+  color: #000;
+} */
+
+/* ------------------------ Blog_Section-08 ------------------------ */
+.sec-8 {
+  height: 852px;
+  padding: 102px 0;
+  /* background-color: #997474; */
+}
+.blog {
+  justify-content: center;
+  /* background-color: white; */
+}
+.heading-blog span {
+  display: flex;
+  justify-content: center;
+  color: #589167;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+.heading-blog h2 {
+  display: flex;
+  justify-content: center;
+  color: #000000b3;
+  font-size: 40px;
+  padding: 0 14px 40px;
+  margin: 0 0 8px;
+}
+/* ------------ Blog_Card ------------ */
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  /* background-color: #ae8080; */
+}
+.blog-card {
+  height: 274px;
+  width: 290px;
+  padding: 0 14px;
+  margin: 0 14px;
+}
+.blog-card img {
+  width: 290px;
+  height: 250px;
+  margin: 0 0 20px;
+}
+.circle-2 {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  background: #f5f4f0;
+  margin: 0 auto;
+  margin-top: -74px;
+}
+.circle-2:hover {
+  background-color: #589167;
+  color: white;
+}
+.crc-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 0 27px;
+}
+.crc-blog .day {
+  font-weight: 700;
+  color: #589167;
+  font-size: 30px;
+  height: 37px;
+}
+.day:hover {
+  background-color: #fff;
+}
+.crc-blog .mo {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 44px;
+  height: 19px;
+}
+.crc-blog .yr {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 11px;
+  height: 13px;
+}
+.blog-card h2 {
+  font-size: 18px;
+  margin: 12px 0 17px;
+  color: #000;
+  width: 290px;
+}
+.blog-card p {
+  font-size: 15px;
+  margin: 0 0 16px;
+  color: #808080;
+  width: 290px;
+  text-align: center;
+  justify-content: center;
+}
+/* ------------------------ Footer_Section-09 ------------------------ */
+.footer {
+  height: 525px;
+  padding: 96px 0 0;
+  background-color: #997474;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+.footer-1st{
+  display: flex;
+}
+.counselor {
+  width: 226px;
+  height: 256px;
+}
+.counselor h2 {
+  font-size: 20px;
+}
+.social-icons-btm {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  margin: 8px 0 17px 0;
+  font-size: 20px;
+}
+.social-icons-btm a {
+  width: 49px;
+  height: 49px;
+  border: none;
+  border-radius: 49%;
+  background-color: #589167;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 10px 10px 0;
+}
+.social-icons-btm i {
+  padding: 0;
+}
+.ul ul li span {
+  margin: 0 0 8px 0;
+  /* background: #7d4a4a; */
+  padding: 0 8px 0 0;
+}
+.question {
+  width: 233px;
+  height: 256px;
+  padding: 0 14px;
+}
+/* .adrs{
+  background: #fff;
+  padding: 0 10px 0;
+} */
+.question h2 {
+  font-size: 20px;
+}
+.marker {
+  padding: 2px 8px 14px 0;
+  background: #7e6c6c;
+  font-size: 24px;
+}
+.copy-write {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+  background: #000;
+}
+
+/* ------------------------ Responsive ------------------------ */
+@media screen and (max-width: 992px) {
+  .navbar-2 {
+    width: 100%;
+    height: 40px;
+    background: #589167;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+    padding: 0 117px;
+  }
+  .social-icons-2 {
+    margin: 0 0px 0 98px;
+    box-sizing: border-box;
+  }
+
+  .navbar-3 {
+    box-sizing: border-box;
+    height: 76px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-3 .heading {
+    margin: 0 118px;
+    color: #fff;
+    font-size: 28px;
+  }
+  .checkbtn {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 17px;
+    margin: 0 0 0 290px;
+  }
+
+  .navbar-3 ul {
+    position: fixed;
+    width: 100%;
+    height: 49%;
+    background: #000;
+    top: 114px;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s;
+  }
+
+  .navbar-3 ul li {
+    margin: 0px 118px;
+    padding: 2px 0 12px;
+    line-height: 30px;
+  }
+  .navbar-3 ul li a {
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+  }
+  .navbar-3 ul li a.active,
+  a:hover {
+    background-color: #fff;
+    transition: 0.4s;
+    padding: 8px 30px;
+    border-radius: 4px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* ---------------- Hero_Section ---------------- */
+  .sec-1 {
+    height: 849px;
+    background-image: url(../assets/bg_1.jpg);
+    background-size: cover;
+    background-position: 60% -53%;
+  }
+
+  .hero-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #d37979; */
+    height: 849px;
+    margin: 0 102px;
+  }
+  /* ------------------------------ Content-Hero ------------------------------ */
+  .content-h {
+    width: 355px;
+    height: 307px;
+    box-sizing: border-box;
+  }
+
+  /* ------------------------------ Card_hero ------------------------------ */
+  .card-h {
+    background: #fff;
+    width: 100%;
+    height: 277px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 145px 0 100px;
+    box-sizing: border-box;
+  }
+  .cards-h {
+    display: none;
+  }
+  .card-h-1 {
+    width: 100%;
+    height: 347px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: -70px 0 0 0;
+  }
+
+  .ser-con-img {
+    height: 561px;
+    width: 430px;
+  }
+  .ser-img img {
+    height: 400px;
+    width: 430px;
+    margin: 0 0 20px;
+  }
+
+  /* ---------------------- Section-02 ---------------------- */
+  .sec-2 {
+    height: 712px;
+    padding: 102px 0;
+    /* background: #c48282; */
+  }
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ser-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 14px;
+    width: 240px;
+    height: 361px;
+  }
+
+  /* ---------------------- Section-03 ---------------------- */
+  .sec-3 {
+    height: 980px;
+    /* background: #c48282; */
+  }
+  .best_conselor {
+    display: flex;
+    justify-content: center;
+    /* background: #443333; */
+  }
+  .bc-img {
+    width: 360px;
+    height: 979px;
+    padding: 0 15px;
+  }
+  .bc-img img {
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    height: 979px;
+  }
+  .bc-con {
+    padding: 48px;
+    width: 360px;
+    height: 979px;
+    background-color: #f5f4f0;
+  }
+
+  /* ---------------------- Section-04 ---------------------- */
+  .sec-4 {
+    height: 826px;
+    padding: 102px 0;
+    /* background: #000; */
+  }
+
+  .service-sec-4 {
+    height: 823px;
+    padding: 15px;
+    margin: 0 103px;
+  }
+  .heading-serv-4 h2 {
+    display: flex;
+    justify-content: center;
+    color: #000000b3;
+    font-size: 37px;
+    padding: 4px 0 40px;
+    margin: 0 0 8px;
+  }
+  /* ------- Services-Content-4 ------- */
+  .content-4 {
+    display: flex;
+    justify-content: center;
+  }
+  .heading-4 {
+    width: 240px;
+    height: 608px;
+    padding: 0 15px;
+  }
+  .heading-4 .service-4 {
+    width: 209px;
+    height: 600px;
+    padding: 0 25px 0 0;
+    margin: 0 32px 0 0;
+    /* background-color: #3a1616; */
+  }
+  .service-4 .ser-item {
+    height: 80px;
+    width: 209px;
+    padding: 24px 16px;
+    margin: 0 0 10px;
+    border: 1px solid #589167;
+    border-radius: 4px;
+    background-color: white;
+  }
+  .ser-con-img {
+    height: 480px;
+    width: 450px;
+    padding: 0 15px;
+  }
+  .ser-img img {
+    width: 450px;
+    height: 400px;
+    margin: 0 0 20px;
+  }
+  .ser-con-img h3 {
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+  .ser-con-img p {
+    font-size: 17px;
+    margin: 0 0 16px;
+  }
+
+  /* ------------------ Happy Client_Section-05 ---------------- */
+  .sec-5 {
+    height: 370px;
+    background-image: url(../assets/bg_4.jpg);
+    background-size: cover;
+    background-position: 10% 54%;
+    /* padding: 34px 0; */
+  }
+  .happy-client {
+    height: 370px;
+    width: 100%;
+    background-color: rgba(88, 145, 103, 0.8);
+    padding: 34px 0;
+  }
+  .heading-hap-5 span {
+    display: none;
+  }
+
+  /* --------------- HC_Card ---------------  */
+  .client-card {
+    height: 290px;
+    /* background: #775f5f; */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ------------------------ Affordable Price_Section-06 ------------------------ */
+  .sec-6 {
+    height: 854px;
+    padding: 102px 0;
+    background-color: #f5f4f0;
+  }
+  .heading-ap-6 span {
+    display: flex;
+    justify-content: center;
+    color: #589167;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  .heading-ap-6 h2 {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-transform: capitalize;
+    margin: 0 0 24px;
+    padding: 0 0 30px;
+  }
+  .pkj-cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 49px;
+  }
+  .pkj-card {
+    width: 210px;
+    height: 549px;
+    background-color: #fff;
+    margin: 20px 14px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .price {
+    font-size: 80px;
+    /* background-color: #82537a; */
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
+  }
+
+  .price span {
+    font-size: 60px;
+    color: #589167;
+  }
+  .price sup {
+    font-size: 24px;
+    color: #808080;
+    margin: 20px 0 0;
+  }
+  .pkj-card h2 {
+    font-size: 18px;
+    margin: 12px 0 20px;
+    padding: 0 0 10px;
+    color: #000;
+  }
+  .pkj-card .ul {
+    font-size: 17px;
+    color: #808080;
+    margin: 34px 0 40px;
+  }
+  .pkj-card .ul li {
+    color: #589167;
+    margin: 0 0 10px;
+    padding: 0 10px;
+  }
+  .pkj-card button {
+    background-color: #589167;
+    color: #fff;
+    padding: 16px 8px;
+    width: 150px;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+  }
+
+  /* ------------------------ Get Touch_Section-07 ------------------------ */
+  .sec-7 {
+    height: 600px;
+    /* padding: 102px 0; */
+    background-image: url(../assets/bg_2.jpg);
+    background-size: cover;
+    background-position: 0 61%;
+  }
+  .get-touch {
+    height: 600px;
+    width: 100%;
+    background-color: rgba(88, 145, 103, 0.8);
+  }
+  .form {
+    height: 530px;
+    width: 480px;
+    /* background-color: #7d5f5f; */
+    margin: 0px 0 0 140px;
+    padding: 180px 34px;
+  }
+
+  /* ------------------------ Blog_Section-08 ------------------------ */
+  .sec-8 {
+    height: 812px;
+    padding: 102px 0;
+    /* background-color: #997474; */
+  }
+  .blog {
+    justify-content: center;
+    /* background-color: white; */
+  }
+  .heading-blog span {
+    display: flex;
+    justify-content: center;
+    color: #589167;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  .heading-blog h2 {
+    display: flex;
+    justify-content: center;
+    color: #000000b3;
+    font-size: 40px;
+    padding: 0 14px 40px;
+    margin: 0 0 8px;
+  }
+  /* ------------ Blog_Card ------------ */
+  .blog-cards {
+    width: 720px;
+    height: 568px;
+    margin: 0 103px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #ae8080; */
+  }
+  .blog-card {
+    width: 240px;
+    height: 442px;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .blog-card img {
+    width: 209px;
+    height: 250px;
+    margin: 0 0 20px;
+  }
+  .blog-card h2 {
+    font-size: 18px;
+    margin: 12px 0 17px;
+    color: #000;
+    width: 209px;
+    text-align: center;
+  }
+  .blog-card p {
+    font-size: 15px;
+    margin: 0 0 16px;
+    color: #808080;
+    width: 209px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ------------------------ Footer_Section-09 ------------------------ */
+  .container {
+    height: 675px;
+    padding: 96px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 0 102px;
+  }
+  .footer-1st {
+    display: flex;
+  }
+  .copy-write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+    background: #000;
+  }
+}
+/* ------------------ @ND Break ------------------ */
+@media screen and (max-width: 768px) {
+  .navbar-2 {
+    width: 100%;
+    height: 77px;
+    background: #589167;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+    padding: 0 100px;
+    font-size: 17px;
+  }
+  .info_2 p {
+    margin: 0 0 4px;
+    font-size: 17px;
+  }
+  .social-icons-2 {
+    margin: 0 49px 0 0px;
+    box-sizing: border-box;
+    font-size: 17px;
+  }
+
+  .navbar-3 {
+    box-sizing: border-box;
+    height: 66px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-3 .heading {
+    margin: 0 117px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .checkbtn {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 190px;
+  }
+
+  .navbar-3 ul {
+    position: fixed;
+    width: 100%;
+    height: 37%;
+    background: #000;
+    top: 134px;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+  }
+
+  .navbar-3 ul li {
+    margin: 0px 117px;
+    padding: 2px 0 4px;
+    line-height: 30px;
+  }
+  .navbar-3 ul li a {
+    font-size: 14px;
+    display: inline-block;
+    color: #fff;
+  }
+  .navbar-3 ul li a.active,
+  a:hover {
+    background-color: #fff;
+    transition: 0.4s;
+    padding: 8px 20px;
+    border-radius: 4px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* ---------------- Hero_Section ---------------- */
+  .sec-1 {
+    height: 849px;
+    background-image: url(../assets/bg_1.jpg);
+    background-size: cover;
+    background-position: 64% -53%;
+  }
+
+  .hero-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1099px;
+    margin: 0 102px;
+    padding: 102px 0;
+  }
+  /* ------------------------------ Content-Hero ------------------------------ */
+  .content-h {
+    width: 515px;
+    height: 307px;
+    box-sizing: border-box;
+    /* background: #000; */
+  }
+  .h-video {
+    display: flex;
+    justify-content: start;
+  }
+
+  /* ------------------------------ Card_hero ------------------------------ */
+  .card-h {
+    background: #fff;
+    width: 100%;
+    height: 867px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .cards-h {
+    display: none;
+  }
+  .card-h-1 {
+    width: 100%;
+    height: 347px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 14px 30px;
+    margin: 0 112px;
+    /* margin: -70px 0 0 0; */
+  }
+
+  /* ---------------------- Section-02 ---------------------- */
+  .sec-2 {
+    height: 1236px;
+    padding: 102px 0;
+    /* background: #c48282; */
+  }
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ser-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 14px;
+    width: 510px;
+    height: 301px;
+  }
+
+  /* ---------------------- Section-03 ---------------------- */
+  .sec-3 {
+    height: 549px;
+    /* background: #c48282; */
+  }
+  .best_conselor {
+    display: flex;
+    justify-content: center;
+    /* background: #443333; */
+  }
+  .bc-img {
+    display: none;
+    width: 360px;
+    height: 979px;
+    padding: 0 15px;
+  }
+  .bc-con {
+    padding: 48px;
+    width: 540px;
+    height: 549px;
+    background-color: #f5f4f0;
+  }
+
+  /* ---------------------- Section-04 ---------------------- */
+  .sec-4 {
+    height: 1388px;
+    padding: 102px 0;
+  }
+
+  .service-sec-4 {
+    height: 1284px;
+    padding: 15px;
+    margin: 0 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #694646; */
+  }
+  .heading-serv-4 h2 {
+    display: flex;
+    justify-content: center;
+    color: #000000b3;
+    font-size: 27px;
+    /* padding: 4px 0 40px; */
+    margin: 0 0 8px;
+  }
+  /* ------- Services-Content-4 ------- */
+  .content-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heading-4 {
+    width: 540px;
+    height: 540px;
+    padding: 0 15px;
+  }
+  .heading-4 .service-4 {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+  .service-4 .ser-item {
+    height: 80px;
+    width: 100%;
+    padding: 24px 16px;
+    margin: 0 0 10px;
+    border: 1px solid #589167;
+    border-radius: 4px;
+    /* background-color: white; */
+  }
+  /*  */
+  .ser-tab-content {
+    height: 592px;
+    width: 510px;
+    margin: 28px 0 0;
+    /* padding: 0 15px; */
+  }
+  .ser-con-img {
+    height: 400px;
+    width: 510px;
+    padding: 0 15px;
+  }
+  .ser-img img {
+    width: 510px;
+    height: 400px;
+    margin: 0 0 20px;
+  }
+  .ser-con-img h3 {
+    font-size: 28px;
+    color: #000;
+    margin: 0 0 8px;
+  }
+  .ser-con-img p {
+    font-size: 17px;
+    width: 510px;
+    margin: 0 0 16px;
+  }
+
+  /* ------------------ Happy Client_Section-05 ---------------- */
+  .sec-5 {
+    height: 340px;
+    background-image: url(../assets/bg_4.jpg);
+    background-size: cover;
+    background-position: 10% 54%;
+    /* padding: 34px 0; */
+  }
+  .happy-client {
+    height: 370px;
+    width: 100%;
+    background-color: rgba(88, 145, 103, 0.8);
+    padding: 34px 0;
+  }
+  .heading-hap-5 span {
+    display: none;
+  }
+  /* --------------- HC_Card ---------------  */
+  .client-card {
+    height: 334px;
+    /* background: #775f5f; */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ------------------------ Affordable Price_Section-06 ------------------------ */
+  .sec-6 {
+    height: 1900px;
+    padding: 102px 0;
+    background-color: #f5f4f0;
+  }
+  .heading-ap-6 span {
+    display: flex;
+    justify-content: center;
+    color: #589167;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+  }
+  .heading-ap-6 h2 {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    text-transform: capitalize;
+    margin: 0 0 24px;
+    padding: 0 0 30px;
+  }
+  .pkj-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 9px;
+  }
+  .pkj-card {
+    width: 510px;
+    height: 457px;
+    background-color: #fff;
+    margin: 30px 4px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .price {
+    font-size: 80px;
+    /* background-color: #82537a; */
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
+  }
+
+  .price span {
+    font-size: 60px;
+    color: #589167;
+  }
+  .price sup {
+    font-size: 24px;
+    color: #808080;
+    margin: 20px 0 0;
+  }
+  .pkj-card h2 {
+    font-size: 18px;
+    margin: 12px 0 20px;
+    padding: 0 0 10px;
+    color: #000;
+  }
+  .pkj-card .ul {
+    font-size: 17px;
+    color: #808080;
+    margin: 4px 0 22px;
+  }
+  .pkj-card .ul li {
+    color: #589167;
+    margin: 0 0 10px;
+    padding: 0 10px;
+  }
+  .pkj-card button {
+    background-color: #589167;
+    color: #fff;
+    padding: 16px 8px;
+    width: 450px;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+  }
+
+  /* ------------------------ Get Touch_Section-07 ------------------------ */
+  .form {
+    height: 530px;
+    width: 540px;
+    /* background-color: #7d5f5f; */
+    margin: 0px 0 0 140px;
+    padding: 180px 34px;
+  }
+
+  /* ------------------------ Blog_Section-08 ------------------------ */
+  .sec-8 {
+    height: 1707px;
+    padding: 102px 0;
+    /* background-color: #997474; */
+  }
+  .blog {
+    height: 1520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+  }
+  .heading-blog {
+    position: absolute;
+    top: -10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-blog h2 {
+    display: flex;
+    justify-content: center;
+    color: #000000b3;
+    font-size: 40px;
+    padding: 0 14px 40px;
+    margin: 0px 250px 8px;
+  }
+  /* ------------ Blog_Card ------------ */
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-card {
+    width: 510px;
+    height: 415px;
+    padding: 15px;
+    margin: 40px 0 20px;
+  }
+  .blog-card img {
+    width: 510px;
+    height: 250px;
+    margin: 0 0 20px;
+  }
+  .blog-card h2 {
+    font-size: 18px;
+    margin: 12px 0 17px;
+    color: #000;
+    width: 510px;
+    text-align: center;
+  }
+  .blog-card p {
+    font-size: 15px;
+    margin: 0 0 26px;
+    color: #808080;
+    width: 510px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ------------------------ Footer_Section-09 ------------------------ */
+  .container {
+    height: 675px;
+    padding: 96px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 0 102px;
+  }
+  .footer-1st {
+    display: flex;
+  }
+  .copy-write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+    background: #000;
+  }
+}
+
+/* ------------------ @3rD Break ------------------ */
+@media screen and (max-width: 576px) {
+  .navbar-2 {
+    width: 100%;
+    height: 70px;
+    background: #589167;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    /* align-items: center; */
+    color: white;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 16px;
+  }
+
+  .navbar-3 {
+    box-sizing: border-box;
+    height: 66px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-3 .heading {
+    margin: 0 80px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .checkbtn {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 150px;
+  }
+
+  .navbar-3 ul {
+    position: fixed;
+    width: 100%;
+    height: 27%;
+    background: #000;
+    top: 134px;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+  }
+
+  .navbar-3 ul li {
+    margin: 0px 80px;
+    padding: 2px 0 4px;
+    line-height: 30px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* ---------------- Hero_Section ---------------- */
+  .sec-1 {
+    height: 849px;
+    background-image: url(../assets/bg_1.jpg);
+    background-size: cover;
+    background-position: 64% -53%;
+  }
+
+  .hero-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1099px;
+    margin: 0 102px;
+    padding: 102px 0;
+  }
+  /* ------------------------------ Content-Hero ------------------------------ */
+  .content-h {
+    width: 515px;
+    height: 307px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 30px;
+  }
+  .h-video {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ------------------------------ Card_hero ------------------------------ */
+  .card-h {
+    background: #fff;
+    width: 100%;
+    height: 867px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .cards-h {
+    display: none;
+  }
+  .card-h-1 {
+    width: 480px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 14px 30px;
+    margin: 0 0 0 27px;
+    /* margin: -70px 0 0 0; */
+  }
+
+  /* ---------------------- Section-02 ---------------------- */
+  .sec-2 {
+    height: 1236px;
+    padding: 102px 0;
+    /* background: #c48282; */
+  }
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ser-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 14px;
+    width: 510px;
+    height: 301px;
+  }
+
+  /* ---------------------- Section-03 ---------------------- */
+  .sec-3 {
+    height: 570px;
+    /* background: #c48282; */
+  }
+  
+  .bc-con {
+    padding: 40px;
+    width: 540px;
+    height: 549px;
+    background-color: #f5f4f0;
+  }
+
+  /* ---------------------- Section-04 ---------------------- */
+  .sec-4 {
+    height: 1388px;
+    padding: 102px 0;
+  }
+
+  .heading-serv-4 h2 {
+    display: flex;
+    justify-content: center;
+    color: #000000b3;
+    font-size: 27px;
+    /* padding: 4px 0 40px; */
+    margin: 0 0 8px;
+    width: 494px;
+  }
+  /* ------- Services-Content-4 ------- */
+  .content-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heading-4 {
+    width: 490px;
+    height: 540px;
+    padding: 0 15px;
+  }
+  /* ------- Services-Content-4 ------- */
+  .ser-tab-content {
+    height: 592px;
+    width: 510px;
+    margin: 28px 0 0;
+    /* padding: 0 15px; */
+  }
+  .ser-con-img {
+    height: 400px;
+    width: 490px;
+    padding: 0 15px;
+  }
+  .ser-img img {
+    width: 460px;
+    height: 400px;
+    margin: 0 0 20px;
+  }
+  .ser-con-img p {
+    font-size: 17px;
+    width: 460px;
+    margin: 0 0 16px;
+  }
+
+  /* ------------------ Happy Client_Section-05 ---------------- */
+  .sec-5 {
+    height: 340px;
+    background-image: url(../assets/bg_4.jpg);
+    background-size: cover;
+    background-position: 10% 54%;
+    /* padding: 34px 0; */
+  }
+  .happy-client {
+    height: 370px;
+    width: 100%;
+    background-color: rgba(88, 145, 103, 0.8);
+    padding: 34px 0;
+  }
+  .heading-hap-5 span {
+    display: none;
+  }
+  /* --------------- HC_Card ---------------  */
+  .client-card {
+    height: 234px;
+    /* background: #775f5f; */
+    display: flex;
+    justify-content: center;
+  }
+  .hc-card{
+    width: 498px;
+    height: 213px;
+    padding: 0 20px;
+
+  }
+  .slider{
+    display: none;
+  }
+
+  /* ------------------------ Affordable Price_Section-06 ------------------------ */
+  .sec-6 {
+    height: 1900px;
+    padding: 102px 0;
+    background-color: #f5f4f0;
+  }
+  .pkj-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 9px;
+  }
+  .pkj-card {
+    width: 490px;
+    height: 457px;
+    background-color: #fff;
+    margin: 30px 4px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  /* ------------------------ Get Touch_Section-07 ------------------------ */
+  .form {
+    height: 530px;
+    width: 470px;
+    /* background-color: #7d5f5f; */
+    margin: 0px 0 0 10px;
+    padding: 140px 34px;
+  }
+
+  /* ------------------------ Blog_Section-08 ------------------------ */
+  .sec-8 {
+    height: 1707px;
+    padding: 102px 0;
+    /* background-color: #997474; */
+  }
+  .blog {
+    height: 1520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+  }
+  .heading-blog {
+    position: absolute;
+    top: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading-blog h2 {
+    display: flex;
+    justify-content: center;
+    color: #000000b3;
+    font-size: 40px;
+    padding: 0 70px 40px;
+    margin: 0px 74px 8px;
+    
+  }
+  /* ------------ Blog_Card ------------ */
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .blog-card {
+    width: 470px;
+    height: 415px;
+    padding: 15px;
+    margin: 40px 0px 20px -104px;
+  }
+  .blog-card img {
+    width: 480px;
+    height: 250px;
+    margin: 0 0 20px;
+  }
+  .blog-card h2 {
+    font-size: 18px;
+    margin: 12px 0 17px;
+    color: #000;
+    width: 470px;
+    text-align: center;
+  }
+  .blog-card p {
+    font-size: 15px;
+    margin: 0 0 26px;
+    color: #808080;
+    width: 470px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* ------------------------ Footer_Section-09 ------------------------ */
+  .container {
+    height: 1375px;
+    padding: 96px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 0 20px;
+  }
+  .footer-1st {
+    display: flex;
+    flex-direction: column;
+  }
+  .copy-write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+    background: #000;
+    padding: 0 20px;
+  }
+}
