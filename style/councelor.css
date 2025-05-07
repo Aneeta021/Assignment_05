@@ -15,7 +15,7 @@ header {
   box-sizing: border-box;
   /* background: #000; */
 }
-.navbar-1 {
+/* .navbar-1 {
   width: 100%;
   background: #333333;
   height: 60px;
@@ -29,7 +29,7 @@ header {
   height: 49px;
   margin: 4px 10px 0 40px;
   padding: 10px 0 0;
-  /* background-color: #fff; */
+  
 }
 .heading-1 h2 {
   height: 60px;
@@ -43,14 +43,14 @@ header {
   font-family: "open Sans, sane-sarif";
   font-weight: 400;
   display: flex;
-  /* line-height: 49px; */
+  
 }
 .heading-1 h2 i {
   margin: 0 12px 0 0;
 }
 .icons-1 {
-  /* float: right;
-  margin: 0 30px 0 700px; */
+  float: right;
+  margin: 0 30px 0 700px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -58,14 +58,14 @@ header {
   margin: 0 30px 0 844px;
 }
 .icons-1 i {
-  /* float: left; */
+  float: left;
   font-size: 27px;
   padding: 10px 17px;
-  /* background: #c18585; */
+  background: #c18585;
 }
 .purchase-btn {
   background-color: #d59f9f;
-}
+} */
 
 /*  ---------------- Navbar-2 ----------------- */
 .navbar-2 {
@@ -78,40 +78,56 @@ header {
   color: white;
 }
 .info_2 {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #704242; */
+  padding: 0 12px;
+}
+.info {
   display: flex;
 }
 .info-2 {
   color: white;
   padding: 14px 10px 0;
 }
-
 .social-icons-2 {
-  margin: 0 0px 0 488px;
+  padding: 0 28px 0 0;
 }
 .social-icons-2 i {
-  padding: 0 8px 0 18px;
+  padding: 0 8px 0px;
 }
+/*  ---------------- Navbar-3 ----------------- */
 
 .navbar-3 {
-  height: 76px;
-  width: 1009px;
+  height: 70px;
+  width: 100%;
   /* background: #ad6969; */
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  margin: 0 290px;
+  justify-content: center;
 }
-.navbar-3 ul {
+.nav {
+  width: 65%;
   display: flex;
-  margin: 0 10px 0 380px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  /* background-color: #6e6666; */
 }
-.navbar-3 ul li {
-  padding: 0 17px;
+
+.navbar-3 .nav ul {
+  display: flex;
+  align-items: center;
 }
-.navbar-3 ul li a {
+.navbar-3 .nav ul li {
+  padding: 14px 17px 0;
+}
+.navbar-3 .nav ul li a {
   color: #000;
 }
-.navbar-3 ul li a:hover {
+.navbar-3 .nav ul li a:hover {
   color: #589167;
 }
 
@@ -121,11 +137,9 @@ header {
   color: #fff;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
   cursor: pointer;
   display: none;
 }
-
 #check {
   display: none;
 }
@@ -138,12 +152,22 @@ header {
 }
 
 .hero-sec {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   /* background: #d37979; */
-  height: 849px;
-  margin: 0 242px;
+  height: 850px;
+}
+
+.hero {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  /* background: #694c4c; */
 }
 /* ------------------------------ Content-Hero ------------------------------ */
 .content-h {
@@ -153,7 +177,8 @@ header {
 }
 .content-h h1 {
   color: #000;
-  font-size: 60px;
+  font-size: 58px;
+  padding: 0;
   margin: 0 0 24px;
 }
 .con-h {
@@ -205,12 +230,19 @@ header {
   }
 }
 /* ------------------------------ Card_hero ------------------------------ */
-.card-h {
-  background: #7d4a4a;
-  width: 1331px;
+.hero-card {
+  width: 100%;
   display: flex;
+  justify-content: start;
+  /* background-color: #964e4e; */
 }
 .cards-h {
+  /* background: #412121; */
+  width: 82%;
+  display: flex;
+  justify-content: start;
+}
+.card-h {
   width: 220px;
   background-color: #589167;
   margin: -70px 0 0 0;
@@ -438,13 +470,14 @@ header {
 .service-4 .ser-item a {
   color: #000;
 }
-.service-4 .active {
+/* .service-4 .active {
   background-color: #589167;
   color: #fff;
-}
-.service-4 .active a {
+} */
+/* .service-4 .active a {
   color: white;
-}
+} */
+
 .service-4 .ser-item:hover,
 .ser-link:hover {
   background-color: #589167;
@@ -658,14 +691,19 @@ header {
 .get-touch {
   height: 660px;
   width: 100%;
-  background-color: rgba(88, 145, 103, 0.8);
+  background-color: rgba(88, 145, 103, 0.4);
+}
+.sec-7-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #7e4f4f; */
+  height: 660px;
+  width: 74%;
+  padding: 0;
 }
 .form {
-  height: 530px;
   width: 480px;
-  /* background-color: #7d5f5f; */
-  margin: 0px 0 0 290px;
-  padding: 180px 34px;
 }
 .form h2 {
   font-size: 28px;
@@ -715,17 +753,29 @@ textarea.form-control {
 .submit-btn:hover {
   background-color: #e1e1e1;
 }
-/* .form element::placeholder {
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #2e2424;
+}
+.form select {
+  color: #2e2424;
+}
+.form select option {
   color: #000;
-} */
+  background-color: #fff;
+}
 
 /* ------------------------ Blog_Section-08 ------------------------ */
 .sec-8 {
   height: 852px;
   padding: 102px 0;
   /* background-color: #997474; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .blog {
+  width: 64%;
   justify-content: center;
   /* background-color: white; */
 }
@@ -741,7 +791,7 @@ textarea.form-control {
   justify-content: center;
   color: #000000b3;
   font-size: 40px;
-  padding: 0 14px 40px;
+  padding: 0 0px 40px;
   margin: 0 0 8px;
 }
 /* ------------ Blog_Card ------------ */
@@ -831,7 +881,7 @@ textarea.form-control {
   justify-content: center;
   background-color: #1a1a1a;
 }
-.footer-1st{
+.footer-1st {
   display: flex;
 }
 .counselor {
@@ -882,8 +932,7 @@ textarea.form-control {
 }
 .marker {
   padding: 2px 8px 14px 0;
-  background: #7e6c6c;
-  font-size: 24px;
+  font-size: 20px;
 }
 .copy-write {
   display: flex;
@@ -900,15 +949,21 @@ textarea.form-control {
     height: 40px;
     background: #589167;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     color: white;
     box-sizing: border-box;
-    padding: 0 117px;
+  }
+  .info_2 {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    /* background-color: #6e6666; */
   }
   .social-icons-2 {
-    margin: 0 0px 0 98px;
-    box-sizing: border-box;
+    padding: 0;
   }
 
   .navbar-3 {
@@ -922,7 +977,6 @@ textarea.form-control {
     padding: 0;
   }
   .navbar-3 .heading {
-    margin: 0 118px;
     color: #fff;
     font-size: 28px;
   }
@@ -931,7 +985,6 @@ textarea.form-control {
     float: right;
     color: #fff;
     font-size: 17px;
-    margin: 0 0 0 290px;
   }
 
   .navbar-3 ul {
@@ -940,8 +993,8 @@ textarea.form-control {
     height: 49%;
     background: #000;
     top: 114px;
-    left: 100%;
     display: flex;
+    left: 100%;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -949,7 +1002,6 @@ textarea.form-control {
   }
 
   .navbar-3 ul li {
-    margin: 0px 118px;
     padding: 2px 0 12px;
     line-height: 30px;
   }
@@ -983,7 +1035,6 @@ textarea.form-control {
     align-items: center;
     /* background: #d37979; */
     height: 849px;
-    margin: 0 102px;
   }
   /* ------------------------------ Content-Hero ------------------------------ */
   .content-h {
@@ -993,27 +1044,29 @@ textarea.form-control {
   }
 
   /* ------------------------------ Card_hero ------------------------------ */
-  .card-h {
-    background: #fff;
+  .hero-card {
     width: 100%;
-    height: 277px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0 145px 0 100px;
-    box-sizing: border-box;
+    /* background-color: #964e4e; */
   }
   .cards-h {
+    width: 68%;
+    display: flex;
+    justify-content: center;
+  }
+  .card-h {
     display: none;
   }
   .card-h-1 {
-    width: 100%;
-    height: 347px;
+    width: 230px;
+    height: 417px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     margin: -70px 0 0 0;
+    padding: 20px;
   }
 
   .ser-con-img {
@@ -1060,20 +1113,23 @@ textarea.form-control {
   }
   .bc-img {
     width: 360px;
-    height: 979px;
+    height: 900px;
     padding: 0 15px;
   }
   .bc-img img {
     display: flex;
     justify-content: center;
     width: 360px;
-    height: 979px;
+    height: 900px;
   }
   .bc-con {
-    padding: 48px;
+    padding: 38px;
     width: 360px;
-    height: 979px;
+    height: 900px;
     background-color: #f5f4f0;
+  }
+  .bc-con .sec-2-btn {
+    font-size: 17px;
   }
 
   /* ---------------------- Section-04 ---------------------- */
@@ -1183,6 +1239,8 @@ textarea.form-control {
   .heading-ap-6 h2 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 40px;
     color: #000;
     text-transform: capitalize;
     margin: 0 0 24px;
@@ -1259,14 +1317,19 @@ textarea.form-control {
   .get-touch {
     height: 600px;
     width: 100%;
-    background-color: rgba(88, 145, 103, 0.8);
+    background-color: rgba(88, 145, 103, 0.4);
+  }
+  .sec-7-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #7e4f4f; */
+    height: 660px;
+    width: 79%;
   }
   .form {
-    height: 530px;
     width: 480px;
     /* background-color: #7d5f5f; */
-    margin: 0px 0 0 140px;
-    padding: 180px 34px;
   }
 
   /* ------------------------ Blog_Section-08 ------------------------ */
@@ -1276,43 +1339,26 @@ textarea.form-control {
     /* background-color: #997474; */
   }
   .blog {
+    width: 78%;
     justify-content: center;
-    /* background-color: white; */
-  }
-  .heading-blog span {
-    display: flex;
-    justify-content: center;
-    color: #589167;
-    text-transform: uppercase;
-    margin: 0 0 10px;
-  }
-  .heading-blog h2 {
-    display: flex;
-    justify-content: center;
-    color: #000000b3;
-    font-size: 40px;
-    padding: 0 14px 40px;
-    margin: 0 0 8px;
   }
   /* ------------ Blog_Card ------------ */
   .blog-cards {
-    width: 720px;
-    height: 568px;
-    margin: 0 103px;
     display: flex;
     justify-content: center;
-    /* background-color: #ae8080; */
+    align-items: center;
+    /* background-color: #754040; */
   }
   .blog-card {
-    width: 240px;
+    width: 249px;
     height: 442px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     margin: 0;
   }
   .blog-card img {
     width: 209px;
     height: 250px;
-    margin: 0 0 20px;
+    margin: 0 0px 20px;
   }
   .blog-card h2 {
     font-size: 18px;
@@ -1329,7 +1375,6 @@ textarea.form-control {
     text-align: center;
     justify-content: center;
   }
-
   /* ------------------------ Footer_Section-09 ------------------------ */
   .container {
     height: 675px;
@@ -1351,29 +1396,25 @@ textarea.form-control {
     background: #000;
   }
 }
-/* ------------------ @ND Break ------------------ */
+/* ------------------ @2ND Break ------------------ */
 @media screen and (max-width: 768px) {
   .navbar-2 {
     width: 100%;
     height: 77px;
     background: #589167;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     color: white;
-    box-sizing: border-box;
-    padding: 0 100px;
     font-size: 17px;
   }
-  .info_2 p {
-    margin: 0 0 4px;
-    font-size: 17px;
-  }
-  .social-icons-2 {
-    margin: 0 49px 0 0px;
-    box-sizing: border-box;
-    font-size: 17px;
+  .info_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /* background-color: #493434; */
+    padding: 0px;
   }
 
   .navbar-3 {
@@ -1385,7 +1426,6 @@ textarea.form-control {
     align-items: center;
   }
   .navbar-3 .heading {
-    margin: 0 117px;
     color: #fff;
     font-size: 20px;
   }
@@ -1394,7 +1434,6 @@ textarea.form-control {
     float: right;
     color: #fff;
     font-size: 14px;
-    margin: 0 0 0 190px;
   }
 
   .navbar-3 ul {
@@ -1410,7 +1449,6 @@ textarea.form-control {
   }
 
   .navbar-3 ul li {
-    margin: 0px 117px;
     padding: 2px 0 4px;
     line-height: 30px;
   }
@@ -1435,7 +1473,7 @@ textarea.form-control {
     height: 849px;
     background-image: url(../assets/bg_1.jpg);
     background-size: cover;
-    background-position: 64% -53%;
+    background-position: 50% -53%;
   }
 
   .hero-sec {
@@ -1443,46 +1481,51 @@ textarea.form-control {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1099px;
-    margin: 0 102px;
-    padding: 102px 0;
+    height: 1149px;
   }
   /* ------------------------------ Content-Hero ------------------------------ */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: #ebb6b6; */
+  }
   .content-h {
-    width: 515px;
-    height: 307px;
+    width: 510px;
     box-sizing: border-box;
     /* background: #000; */
   }
   .h-video {
     display: flex;
     justify-content: start;
+    width: 510px;
   }
 
   /* ------------------------------ Card_hero ------------------------------ */
-  .card-h {
-    background: #fff;
+  .hero-card {
     width: 100%;
-    height: 867px;
+    display: flex;
+    justify-content: center;
+  }
+  .cards-h {
+    width: 68%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
   }
-  .cards-h {
+  .card-h {
     display: none;
   }
   .card-h-1 {
-    width: 100%;
-    height: 347px;
+    width: 510px;
+    height: 290px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 14px 30px;
-    margin: 0 112px;
-    /* margin: -70px 0 0 0; */
+    margin: 0;
+    padding: 30px;
   }
 
   /* ---------------------- Section-02 ---------------------- */
@@ -1512,9 +1555,12 @@ textarea.form-control {
   .sec-3 {
     height: 549px;
     /* background: #c48282; */
+    box-sizing: border-box;
   }
   .best_conselor {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
     /* background: #443333; */
   }
@@ -1526,9 +1572,10 @@ textarea.form-control {
   }
   .bc-con {
     padding: 48px;
-    width: 540px;
-    height: 549px;
+    width: 90%;
+    height: 579px;
     background-color: #f5f4f0;
+    box-sizing: border-box;
   }
 
   /* ---------------------- Section-04 ---------------------- */
@@ -1615,7 +1662,7 @@ textarea.form-control {
     background-image: url(../assets/bg_4.jpg);
     background-size: cover;
     background-position: 10% 54%;
-    /* padding: 34px 0; */
+    padding: 0px 0;
   }
   .happy-client {
     height: 370px;
@@ -1666,8 +1713,8 @@ textarea.form-control {
     width: 510px;
     height: 457px;
     background-color: #fff;
-    margin: 30px 4px;
-    padding: 30px;
+    margin: 30px 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1716,14 +1763,18 @@ textarea.form-control {
     font-size: 17px;
     border-radius: 4px;
   }
-
   /* ------------------------ Get Touch_Section-07 ------------------------ */
+  .sec-7-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #7e4f4f; */
+    height: 660px;
+    width: 100%;
+    padding: 0;
+  }
   .form {
-    height: 530px;
-    width: 540px;
-    /* background-color: #7d5f5f; */
-    margin: 0px 0 0 140px;
-    padding: 180px 34px;
+    padding: 0 10px;
   }
 
   /* ------------------------ Blog_Section-08 ------------------------ */
@@ -1734,16 +1785,17 @@ textarea.form-control {
   }
   .blog {
     height: 1520px;
+    width: 88%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: white;
     position: relative;
   }
   .heading-blog {
     position: absolute;
-    top: -10px;
-
+    top: -20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1754,19 +1806,21 @@ textarea.form-control {
     justify-content: center;
     color: #000000b3;
     font-size: 40px;
-    padding: 0 14px 40px;
-    margin: 0px 250px 8px;
+    padding: 0 0px;
+    margin: 0px 0px 8px;
   }
   /* ------------ Blog_Card ------------ */
   .blog-cards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .blog-card {
     width: 510px;
     height: 415px;
-    padding: 15px;
-    margin: 40px 0 20px;
+    padding: 0px;
+    margin: 0px 0 20px;
   }
   .blog-card img {
     width: 510px;
@@ -1788,7 +1842,6 @@ textarea.form-control {
     text-align: center;
     justify-content: center;
   }
-
   /* ------------------------ Footer_Section-09 ------------------------ */
   .container {
     height: 675px;
@@ -1816,15 +1869,32 @@ textarea.form-control {
   .navbar-2 {
     width: 100%;
     height: 70px;
-    background: #589167;
     display: flex;
-    flex-wrap: wrap;
     justify-content: start;
-    /* align-items: center; */
     color: white;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0;
     font-size: 16px;
+  }
+  .info_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /* background-color: #704242; */
+    padding: 0 15px;
+  }
+  .info-2 {
+    color: white;
+    padding: 0;
+  }
+  .info-2 p {
+    padding: 0;
+    margin: 0;
+  }
+  .social-icons-2 {
+    padding: 0;
   }
 
   .navbar-3 {
@@ -1835,8 +1905,15 @@ textarea.form-control {
     display: flex;
     align-items: center;
   }
+  .nav {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    /* background-color: #6e6666; */
+  }
   .navbar-3 .heading {
-    margin: 0 80px;
     color: #fff;
     font-size: 20px;
   }
@@ -1845,7 +1922,6 @@ textarea.form-control {
     float: right;
     color: #fff;
     font-size: 14px;
-    margin: 0 0 0 150px;
   }
 
   .navbar-3 ul {
@@ -1861,7 +1937,6 @@ textarea.form-control {
   }
 
   .navbar-3 ul li {
-    margin: 0px 80px;
     padding: 2px 0 4px;
     line-height: 30px;
   }
@@ -1874,7 +1949,7 @@ textarea.form-control {
     height: 849px;
     background-image: url(../assets/bg_1.jpg);
     background-size: cover;
-    background-position: 64% -53%;
+    background-position: 50% -53%;
   }
 
   .hero-sec {
@@ -1883,49 +1958,66 @@ textarea.form-control {
     justify-content: center;
     align-items: center;
     height: 1099px;
-    margin: 0 102px;
-    padding: 102px 0;
+    /* padding: 102px 0; */
+  }
+
+  .hero {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    /* background: #694c4c; */
   }
   /* ------------------------------ Content-Hero ------------------------------ */
   .content-h {
-    width: 515px;
-    height: 307px;
+    width: 510px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 0 0 30px;
+    align-items: start;
+    justify-content: start;
+    padding: 0 15px 0px;
   }
+  .content-h h1 {
+    color: #000;
+    font-size: 64px;
+    padding: 0;
+    margin: 0 0 24px;
+  }
+
   .h-video {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    width: 510px;
+    padding: 0 15px 0px;
   }
 
   /* ------------------------------ Card_hero ------------------------------ */
-  .card-h {
-    background: #fff;
+  .hero-card {
     width: 100%;
-    height: 867px;
+    display: flex;
+    justify-content: center;
+  }
+  .cards-h {
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
   }
-  .cards-h {
+  .card-h {
     display: none;
   }
   .card-h-1 {
-    width: 480px;
+    width: 470px;
     height: 290px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 14px 30px;
-    margin: 0 0 0 27px;
-    /* margin: -70px 0 0 0; */
+    margin: 0;
+    padding: 30px;
   }
 
   /* ---------------------- Section-02 ---------------------- */
@@ -1934,20 +2026,14 @@ textarea.form-control {
     padding: 102px 0;
     /* background: #c48282; */
   }
-  .service-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .ser-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 14px;
-    width: 510px;
+    padding: 0;
+    width: 440px;
     height: 301px;
   }
 
@@ -1956,10 +2042,10 @@ textarea.form-control {
     height: 570px;
     /* background: #c48282; */
   }
-  
+
   .bc-con {
     padding: 40px;
-    width: 540px;
+    width: 100%;
     height: 549px;
     background-color: #f5f4f0;
   }
@@ -2037,13 +2123,12 @@ textarea.form-control {
     display: flex;
     justify-content: center;
   }
-  .hc-card{
+  .hc-card {
     width: 498px;
     height: 213px;
     padding: 0 20px;
-
   }
-  .slider{
+  .slider {
     display: none;
   }
 
@@ -2061,25 +2146,49 @@ textarea.form-control {
     margin: 0 0 9px;
   }
   .pkj-card {
-    width: 490px;
+    width: 340px;
     height: 457px;
     background-color: #fff;
-    margin: 30px 4px;
-    padding: 30px;
+    margin: 30px 0px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  } 
-
-  /* ------------------------ Get Touch_Section-07 ------------------------ */
-  .form {
-    height: 530px;
-    width: 470px;
-    /* background-color: #7d5f5f; */
-    margin: 0px 0 0 10px;
-    padding: 140px 34px;
   }
 
+  .pkj-card button {
+    background-color: #589167;
+    color: #fff;
+    padding: 16px 8px;
+    width: 330px;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+  }
+
+  /* ------------------------ Get Touch_Section-07 ------------------------ */
+  .sec-7 {
+    height: 600px;
+    /* padding: 102px 0; */
+    background-image: url(../assets/bg_2.jpg);
+    background-size: cover;
+    background-position: 0 61%;
+  }
+  .get-touch {
+    height: 600px;
+    width: 100%;
+    background-color: rgba(88, 145, 103, 0.4);
+  }
+  .sec-7-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #7e4f4f; */
+    height: 660px;
+    width: 100%;
+    padding: 0 17px;
+  }
   /* ------------------------ Blog_Section-08 ------------------------ */
   .sec-8 {
     height: 1707px;
@@ -2088,6 +2197,7 @@ textarea.form-control {
   }
   .blog {
     height: 1520px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2096,8 +2206,7 @@ textarea.form-control {
   }
   .heading-blog {
     position: absolute;
-    top: 0px;
-
+    top: -10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2108,9 +2217,8 @@ textarea.form-control {
     justify-content: center;
     color: #000000b3;
     font-size: 40px;
-    padding: 0 70px 40px;
-    margin: 0px 74px 8px;
-    
+    padding: 0 0px 40px;
+    margin: 0px 0px 8px;
   }
   /* ------------ Blog_Card ------------ */
   .blog-cards {
@@ -2121,8 +2229,8 @@ textarea.form-control {
   .blog-card {
     width: 470px;
     height: 415px;
-    padding: 15px;
-    margin: 40px 0px 20px -104px;
+    padding: 0px;
+    margin: 40px 0px 20px 0px;
   }
   .blog-card img {
     width: 480px;
@@ -2166,5 +2274,213 @@ textarea.form-control {
     padding: 48px 0;
     background: #000;
     padding: 0 20px;
+  }
+}
+
+/* ------------------ @4th Break ------------------ */
+@media screen and (max-width: 460px) {
+  .navbar-3 {
+    box-sizing: border-box;
+    height: 66px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-3 .heading {
+    color: #fff;
+    font-size: 20px;
+  }
+  .checkbtn {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .navbar-3 ul {
+    position: fixed;
+    width: 100%;
+    height: 27%;
+    background: #000;
+    top: 134px;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+  }
+
+  /* ------------------------------ Content-Hero ------------------------------ */
+  .content-h {
+    width: 330px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0 15px 0px;
+  }
+  .content-h h1 {
+    color: #000;
+    font-size: 64px;
+    padding: 0;
+    margin: 0 0 24px;
+  }
+
+  .h-video {
+    display: flex;
+    justify-content: start;
+    width: 330px;
+    padding: 0 15px 0px;
+  }
+
+  /* ------------------------------ Card_hero ------------------------------ */
+  .cards-h {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-h {
+    display: none;
+  }
+  .card-h-1 {
+    width: 340px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* ---------------------- Section-02 ---------------------- */
+  .sec-2 {
+    height: 1236px;
+    padding: 102px 0;
+    /* background: #c48282; */
+  }
+  .ser-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    width: 340px;
+    height: 301px;
+  }
+
+  /* ---------------------- Section-03 ---------------------- */
+  .sec-3 {
+    height: 570px;
+    /* background: #c48282; */
+  }
+
+  .bc-con {
+    padding: 20px;
+    width: 100%;
+    height: 580px;
+    background-color: #f5f4f0;
+  }
+
+  .bc-con .sec-2-btn {
+    padding: 0;
+    font-size: 14px;
+    /* background-color: #c76c6c; */
+  }
+
+  /* ---------------------- Section-04 ---------------------- */
+  .sec-4 {
+    height: 1488px;
+    padding: 102px 0;
+  }
+
+  .heading-serv-4 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000b3;
+    font-size: 20px;
+    margin: 0 0 8px;
+    width: 330px;
+  }
+  /* ------- Services-Content-4 ------- */
+  .content-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heading-4 {
+    width: 330px;
+    height: 540px;
+    padding: 0px;
+  }
+  /* ------- Services-Content-4 ------- */
+  .ser-tab-content {
+    height: 592px;
+    width: 100%;
+    /* background-color: #633b3b; */
+    margin: 28px 0 0;
+    padding: 0px;
+  }
+  .ser-con-img {
+    height: 400px;
+    width: 330px;
+    padding: 0px;
+  }
+  .ser-img img {
+    width: 330px;
+    height: 400px;
+    margin: 0 0 20px;
+  }
+  .ser-con-img p {
+    font-size: 17px;
+    width: 330px;
+    margin: 0 0 16px;
+  }
+
+  /* ------------------------ Get Touch_Section-07 ------------------------ */
+  .form h2 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 24px;
+    padding: 0 10px;
+  }
+
+  /* ------------ Blog_Card ------------ */
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .blog-card {
+    width: 340px;
+    height: 400px;
+    padding: 0px;
+    margin: 40px 0px 20px 0px;
+  }
+  .blog-card img {
+    width: 340px;
+    height: 250px;
+    margin: 0 0 20px;
+  }
+  .blog-card h2 {
+    font-size: 18px;
+    margin: 12px 0 17px;
+    color: #000;
+    width: 340px;
+    text-align: center;
+  }
+  .blog-card p {
+    font-size: 15px;
+    margin: 0 0 26px;
+    color: #808080;
+    width: 340px;
+    text-align: center;
+    justify-content: center;
   }
 }
